@@ -1,18 +1,17 @@
 import logo from "../assets/logo.png"
+import "../styles/Header/index.css"
 
 function Header() {
   return (
-    <div>
-      <header>
-        <nav>
+      <header className="header">
+        <nav className="nav-block">
           <img src={logo} alt="Kasa-Header-logo" />
-          <div>
+          <div className="navigation">
             <p>Acceuil</p>
             <p>A Propos</p>
           </div>
         </nav>
       </header>
-    </div>
   );
 }
 

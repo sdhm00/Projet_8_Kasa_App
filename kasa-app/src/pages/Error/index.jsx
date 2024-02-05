@@ -1,5 +1,6 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import "../../styles/Pages/Error/index.css"
 
 function Error() {
   return (

@@ -1,6 +1,7 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import img2 from "../../assets/img2.png"
+import "../../styles/Pages/About/index.css"
 
 function About() {
   return (

@@ -1,0 +1,71 @@
+.bloc {
+    margin: 30px 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/** Image Main page **/
+
+.img-block {
+    width: 100%;
+    height: 223px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.img {
+    width: 100%;
+    height: 223px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.img-txt {
+    font-size: 48px;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: unset;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px
+}
+
+/** Logements **/
+
+.logement-background {
+    height: 829px;
+    border-radius: 25px;
+    background: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.logement {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.logement-block {
+    width: 360px;
+    height: 360px;
+    background-color: #FF6060;
+    box-shadow: inset 0px -90px 60px -50px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: flex-end;
+    border-radius: 10px;
+}
+
+.logement-block p {
+    color: white;
+    margin: 10px;
+}

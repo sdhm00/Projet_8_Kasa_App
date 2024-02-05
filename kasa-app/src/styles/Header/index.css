@@ -1,0 +1,24 @@
+.header {
+    height: 68px;
+    padding: 20px 50px;
+}
+
+.nav-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 57px;
+}
+
+.header p {
+    color: #FF6060;
+    margin: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

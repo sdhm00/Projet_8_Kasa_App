@@ -7,6 +7,7 @@ import {
 import App from './pages/Home/index';
 import Root from "./routes/root";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
