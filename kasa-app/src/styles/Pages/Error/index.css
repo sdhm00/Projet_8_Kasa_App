@@ -1,0 +1,29 @@
+.error-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 139px;
+    color: #FF6060;
+}
+
+.error-title {
+    font-size: 288px;
+    font-weight: 700;
+    text-align: center;
+    margin: unset;
+}
+
+.error-text {
+    font-size: 36px;
+    font-weight: 500;
+    text-align: left;
+    margin: unset;
+}
+
+.error-p {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    margin: unset;
+}

@@ -16,9 +16,17 @@
 }
 
 .header p {
-    color: #FF6060;
     margin: unset;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header a {
+    text-decoration: unset;
+    color: #FF6060;
+}
+
+.nav-link:active {
+    text-decoration: underline;
 }
