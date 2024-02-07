@@ -23,7 +23,7 @@
 
 .img-txt {
     font-size: 48px;
-    color: white;
+    color: var(--second-color);
     position: absolute;
     top: 0;
     right: 0;
@@ -42,7 +42,7 @@
 .logement-background {
     height: 829px;
     border-radius: 25px;
-    background: #F6F6F6;
+    background: var(--second-color);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -55,17 +55,16 @@
     justify-content: space-evenly;
 }
 
-.logement-block {
+.logement a {
+    color: var(--second-color);
+    margin: 10px;
+    text-decoration: none;
     width: 360px;
     height: 360px;
-    background-color: #FF6060;
+    background-color: var(--main-color);
     box-shadow: inset 0px -90px 60px -50px rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: flex-end;
     border-radius: 10px;
-}
-
-.logement-block p {
-    color: white;
-    margin: 10px;
+    padding: 10px;
 }

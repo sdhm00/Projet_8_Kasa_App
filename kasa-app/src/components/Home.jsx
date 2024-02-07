@@ -1,5 +1,6 @@
 import img1 from "../assets/img1.png"
-import "../styles/Pages/Home/index.css"
+import "../styles/styles.css"
+import { Link } from "react-router-dom"
 
 function Home() {
   return (
@@ -11,26 +12,14 @@ function Home() {
         </div>
         <div className="logement-background">
           <div className="logement">
-            <div className="logement-block">
-              <p>Titre de la <br/>location</p>
-            </div>
-            <div className="logement-block">
-              <p>Titre de la <br/>location</p>
-            </div>
-            <div className="logement-block">
-              <p>Titre de la <br/>location</p>
-            </div>
+            <Link to="/logement">Titre de la <br/>location</Link>
+            <Link to="/logement">Titre de la <br/>location</Link>
+            <Link to="/logement">Titre de la <br/>location</Link>
           </div>
           <div className="logement">
-            <div className="logement-block">
-              <p>Titre de la <br/>location</p>
-            </div>
-            <div className="logement-block">
-              <p>Titre de la <br/>location</p>
-            </div>
-            <div className="logement-block">
-              <p>Titre de la <br/>location</p>
-            </div>
+            <Link to="/logement">Titre de la <br/>location</Link>
+            <Link to="/logement">Titre de la <br/>location</Link>
+            <Link to="/logement">Titre de la <br/>location</Link>
           </div>
         </div>
       </div>

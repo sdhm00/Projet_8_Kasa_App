@@ -24,7 +24,7 @@
 
 .header a {
     text-decoration: unset;
-    color: #FF6060;
+    color: var(--main-color);
 }
 
 .nav-link:active {

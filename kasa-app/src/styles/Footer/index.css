@@ -1,6 +1,6 @@
 .box {
     background-color: black;
-    color: white;
+    color: var(--second-color);
     text-align: center;
     padding: 30px;
 }
