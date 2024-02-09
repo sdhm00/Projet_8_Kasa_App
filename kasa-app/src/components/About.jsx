@@ -5,8 +5,8 @@ function About() {
   return (
     <div className="about-block">
       <div className="img-block">
-        <img src={img2} alt="img page à propos" className="img2"/>
-        <p className="img2-background"></p>
+        <img src={img2} alt="img page à propos" className="img"/>
+        <p className="img-background"></p>
       </div>
       <div className="info-block">
         <div className="about-infos">

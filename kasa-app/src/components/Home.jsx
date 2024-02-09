@@ -8,18 +8,42 @@ function Home() {
       <div className="bloc">
         <div className="img-block">
           <img src={img1} alt="img home page" className="img" />
-          <p className="img-txt">Chez vous, partout et ailleurs</p>
+          <p className="img-txt img-background">Chez vous, partout et ailleurs</p>
         </div>
         <div className="logement-background">
           <div className="logement">
-            <Link to="/logement">Titre de la <br/>location</Link>
-            <Link to="/logement">Titre de la <br/>location</Link>
-            <Link to="/logement">Titre de la <br/>location</Link>
+            <Link to="/logement">
+              <div className="cards-background">
+                <p>Titre de la <br/>location</p>
+              </div>
+            </Link>
+            <Link to="/logement">
+              <div className="cards-background">
+                <p>Titre de la <br/>location</p>
+              </div>
+            </Link>
+            <Link to="/logement">
+              <div className="cards-background">
+                <p>Titre de la <br/>location</p>
+              </div>
+            </Link>
           </div>
           <div className="logement">
-            <Link to="/logement">Titre de la <br/>location</Link>
-            <Link to="/logement">Titre de la <br/>location</Link>
-            <Link to="/logement">Titre de la <br/>location</Link>
+            <Link to="/logement">
+              <div className="cards-background">
+                <p>Titre de la <br/>location</p>
+              </div>
+            </Link>
+            <Link to="/logement">
+              <div className="cards-background">
+                <p>Titre de la <br/>location</p>
+              </div>
+            </Link>
+            <Link to="/logement">
+              <div className="cards-background">
+                <p>Titre de la <br/>location</p>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
