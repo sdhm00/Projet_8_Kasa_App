@@ -3,6 +3,7 @@
 body {
   margin: unset;
   width: 100%;
+  padding: 25px 0 0 0;
 }
 
 * {
@@ -27,7 +28,7 @@ body {
 }
 .img-block .img {
   width: 100%;
-  height: 223px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px;
@@ -60,6 +61,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .header .nav-block .navigation {
   display: flex;
@@ -75,6 +77,7 @@ body {
 .header a {
   text-decoration: unset;
   color: var(--main-color);
+  font-size: 24px;
 }
 .header a:focus {
   text-decoration: underline;
@@ -210,6 +213,21 @@ body {
   justify-content: space-evenly;
 }
 
+.log-block {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.img-log {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+}
+
 .logement {
   display: flex;
   flex-direction: row;
@@ -222,7 +240,6 @@ body {
 .logement a {
   color: var(--second-color);
   text-decoration: none;
-  background-color: var(--main-color);
   display: flex;
   align-items: flex-end;
   border-radius: 10px;
@@ -235,8 +252,12 @@ body {
   display: flex;
   align-items: flex-end;
   border-radius: 10px;
-  padding: 0 10px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  position: absolute;
+}
+
+.cards-background p {
+  padding: 0 10px;
 }
 
 /** Version Mobile **/
@@ -257,10 +278,12 @@ body {
 
 .logement-carousel {
   position: relative;
+  width: 91%;
 }
 
 .logement-img {
   border-radius: 25px;
+  width: 100%;
 }
 
 #arrow-left, #arrow-right {
@@ -269,18 +292,15 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 100%;
+  width: 98%;
   height: 100%;
   display: flex;
   align-items: center;
 }
 
-#arrow-left {
-  justify-self: start;
-}
-
 #arrow-right {
   justify-content: end;
+  padding: 0 40px;
 }
 
 .carousel-txt {

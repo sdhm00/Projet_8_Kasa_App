@@ -10,10 +10,12 @@
 
 .logement-carousel {
     position: relative;
+    width: 91%;
 }
 
 .logement-img {
     border-radius: 25px;
+    width: 100%;
 }
 
 #arrow-left, #arrow-right {
@@ -22,18 +24,15 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 100%;
+    width: 98%;
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-#arrow-left {
-    justify-self: start;
-}
-
 #arrow-right {
     justify-content: end;
+    padding: 0 40px;
 }
 
 .carousel-txt {
