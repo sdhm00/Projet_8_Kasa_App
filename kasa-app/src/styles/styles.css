@@ -42,8 +42,16 @@ body {
   right: 0;
   margin: unset;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
 }
 
+/** Version Mobile **/
+@media (max-width: 767.98px) {
+  .img-block {
+    height: 111px;
+  }
+}
 .box {
   background-color: black;
   color: var(--second-color);
@@ -51,10 +59,15 @@ body {
   padding: 30px;
 }
 
+@media (max-width: 767.98px) {
+  .box {
+    font-size: 12px;
+    padding: 66px 120.31px 58px 121.09px;
+  }
+}
 /** Header et Navigation **/
 /** Version Desktop **/
 .header {
-  height: 68px;
   padding: 20px 50px;
 }
 .header .nav-block {
@@ -86,10 +99,16 @@ body {
 /** Version Mobile **/
 @media (max-width: 767.98px) {
   .header {
-    padding: 20px;
+    padding: 0 20px;
+  }
+  .header .nav-block .navigation {
+    gap: 24px;
   }
   .header img {
     width: 40%;
+  }
+  .header a {
+    font-size: 12px;
   }
   .nav-block {
     display: flex;
@@ -120,6 +139,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 15px;
 }
 
 .about-buttons {
@@ -130,7 +150,6 @@ body {
   border-radius: 5px;
   display: flex;
   flex-direction: row;
-  padding: 0px 20px 0px 15px;
   justify-content: space-between;
 }
 
@@ -142,6 +161,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 20px;
 }
 
 .about-infos {
@@ -157,6 +177,31 @@ body {
   display: none;
 }
 
+/** Version Mobile **/
+@media (max-width: 767.98px) {
+  .about-block {
+    margin: unset;
+    padding: 20px 19px;
+    gap: 19px;
+  }
+  .about-block .info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .about-block .info-block .about-buttons {
+    width: 100%;
+    height: 30px;
+  }
+  .about-block .info-block .about-buttons h1 {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+  .about-block .info-block .about-buttons #about-vector {
+    font-size: 16px;
+  }
+}
 .error-page {
   display: flex;
   flex-direction: column;
@@ -195,7 +240,7 @@ body {
 }
 
 /** Image Main page **/
-.img-txt {
+#img-txt {
   font-size: 48px;
   color: var(--second-color);
   display: flex;
@@ -216,16 +261,6 @@ body {
 .log-block {
   width: 100%;
   height: 100%;
-  position: relative;
-}
-
-.img-log {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border-radius: 10px;
 }
 
 .logement {
@@ -236,13 +271,13 @@ body {
   height: 40%;
   width: 100%;
 }
-
 .logement a {
   color: var(--second-color);
   text-decoration: none;
   display: flex;
   align-items: flex-end;
   border-radius: 10px;
+  background-color: var(--main-color);
   width: 27%;
 }
 
@@ -253,7 +288,6 @@ body {
   align-items: flex-end;
   border-radius: 10px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-  position: absolute;
 }
 
 .cards-background p {
@@ -264,6 +298,27 @@ body {
 @media (max-width: 767.98px) {
   .bloc {
     margin: 20px;
+    gap: 22px;
+  }
+  #img-txt {
+    font-size: 24px;
+    position: absolute;
+    left: 16px;
+  }
+  .logement-background {
+    height: unset;
+    background: unset;
+    gap: 22px;
+  }
+  .logement-background .logement {
+    display: flex;
+    flex-direction: column;
+    height: unset;
+    gap: 22px;
+  }
+  .logement-background .logement a {
+    width: 100%;
+    height: 255px;
   }
 }
 .logement-block {
