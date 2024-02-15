@@ -1,5 +1,6 @@
 import "../styles/styles.css"
 import img3 from "../assets/img3.png"
+import imgMobile from "../assets/imgcarrousel.png"
 
 function Logement() {
     return (
@@ -7,6 +8,7 @@ function Logement() {
         <div className="logement-carousel">
           <i className="fa-solid fa-chevron-left" id="arrow-left"></i>
           <img src={img3} alt="Logement img" className="logement-img" />
+          <img src={imgMobile} alt="Logement img mobile" className="logement-img-mobile" />
           <p className="carousel-txt">1/4</p>
           <i className="fa-solid fa-chevron-right" id="arrow-right"></i>
         </div>
@@ -16,16 +18,16 @@ function Logement() {
               <h1>Cozy loft on the Canal Saint-Martin</h1>
               <p>Paris, Île-de-France</p>
             </div>
-            <div className="logement-host">
-              <p>Alexandre <br/> Dumas</p>
-              <div className="host-picture"></div>
-            </div>
-          </div>
-          <div className="logement-rating">
             <div className="logement-tag">
               <p>Cozy</p>
               <p>Canal</p>
               <p>Paris</p>
+            </div>
+          </div>
+          <div className="logement-rating">
+            <div className="logement-host">
+              <p>Alexandre <br/> Dumas</p>
+              <div className="host-picture"></div>
             </div>
             <div className="logement-stars">
               <i class="fa-solid fa-star active-stars"></i>
@@ -35,6 +37,7 @@ function Logement() {
               <i class="fa-solid fa-star inactive-stars"></i>
             </div>
           </div>
+        </div>
           <div className="description-text">
             <div className="block-text">
               <div className="description-buttons">
@@ -52,7 +55,6 @@ function Logement() {
             </div>
           </div>
         </div>
-      </div>
     );
   }
   

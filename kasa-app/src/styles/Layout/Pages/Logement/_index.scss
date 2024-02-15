@@ -16,6 +16,14 @@
 .logement-img {
     border-radius: 25px;
     width: 100%;
+    object-fit: cover;
+}
+
+.logement-img-mobile {
+    display: none;
+    border-radius: 25px;
+    width: 100%;
+    object-fit: cover;
 }
 
 #arrow-left, #arrow-right {
@@ -55,14 +63,14 @@
 .description-block {
     width: 91%;
     display: flex;
-    flex-direction: column;
     gap: 20px;
+    justify-content: space-between;
 }
 
 .logement-description {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
 }
 
 .logement-title h1{
@@ -70,9 +78,6 @@
     margin: unset;
     font-size: 36px;
     font-weight: 500;
-    line-height: 51px;
-    letter-spacing: 0em;
-    text-align: left;
 }
 
 .logement-title p {
@@ -80,9 +85,6 @@
     margin: unset;
     font-size: 18px;
     font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0em;
-    text-align: left;
 }
 
 .logement-host {
@@ -107,7 +109,7 @@
 
 .logement-rating {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -124,9 +126,6 @@
     border-radius: 10px;
     font-size: 14px;
     font-weight: 700;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: center;
     background-color: var(--main-color);
     color: var(--second-color);
     margin: unset;
@@ -188,4 +187,116 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--second-color);
+}
+
+/** Version Mobile **/
+
+@media (max-width: 767.98px) {
+
+    .logement-block {
+        margin: 27px 0;
+        gap: 10px;
+
+        #arrow-left, #arrow-right {
+            font-size: 24px;
+        }
+    
+        #arrow-right {
+            padding: 0 10px;
+        }
+    
+        .carousel-txt {
+            display: none;
+        }
+    
+        .logement-img {
+            display: none;
+        }
+    
+        .logement-img-mobile {
+            display: unset;
+        }
+
+        .description-block {
+            display: flex;
+            flex-direction: column;
+
+            .logement-description {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+
+                .logement-title {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    h1 {
+                        font-size: 18px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+
+                .logement-tag p{
+                    height: 18px;
+                    width: 84px;
+                    font-size: 10px;
+                    font-weight: 500;
+                }
+            }
+
+            .logement-rating {
+                flex-direction: row-reverse;
+                .logement-host {
+
+                    p{
+                        font-size: 12px;
+                    } 
+
+                    .host-picture {
+                        height: 30px;
+                        width: 30px;
+                    }
+                }
+
+                .logement-stars {
+
+                    i {
+                        width: 18px;
+                        height: 18px;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+        .description-text {
+            gap: 20px;
+            flex-direction: column;
+            width: 91%;
+
+            .block-text {
+                width: 100%;
+
+                .description-buttons {
+                    height: 15px;
+                    align-items: center;
+
+                    h2 {
+                        font-size: 13px;
+                        padding: unset;
+                        font-weight: 500;
+                    }
+
+                    #about-vector {
+                        font-size: 13px;
+                        padding: unset;
+                    }
+                }
+            }
+        }
+    }
 }

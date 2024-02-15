@@ -5,6 +5,7 @@
     align-items: center;
     gap: 139px;
     color: var(--main-color);
+    padding-bottom: 139px;
 }
 
 .error-title {
@@ -26,4 +27,5 @@
     font-weight: 500;
     text-align: left;
     margin: unset;
+    color: var(--main-color);
 }
