@@ -5,7 +5,7 @@
     align-items: center;
     gap: 139px;
     color: var(--main-color);
-    padding-bottom: 139px;
+    padding: 139px 0;
 }
 
 .error-title {
@@ -22,10 +22,36 @@
     margin: unset;
 }
 
+.error-text br {
+    display: unset;
+}
+
 .error-p {
     font-size: 18px;
     font-weight: 500;
     text-align: left;
     margin: unset;
     color: var(--main-color);
+}
+
+/** Version Mobile **/
+
+@media (max-width: 767.98px) {
+    .error-page {
+        gap: 113px;
+
+        .error-title {
+            font-size: 96px;
+        }
+
+        .error-text {
+            font-size: 18px;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .error-p {
+            font-size: 14px;
+        }
+    }
 }

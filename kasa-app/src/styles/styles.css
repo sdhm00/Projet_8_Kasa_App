@@ -68,7 +68,7 @@ body {
 /** Header et Navigation **/
 /** Version Desktop **/
 .header {
-  padding: 20px 50px;
+  padding: 0 50px;
 }
 .header .nav-block {
   display: flex;
@@ -209,7 +209,7 @@ body {
   align-items: center;
   gap: 139px;
   color: var(--main-color);
-  padding-bottom: 139px;
+  padding: 139px 0;
 }
 
 .error-title {
@@ -226,6 +226,10 @@ body {
   margin: unset;
 }
 
+.error-text br {
+  display: unset;
+}
+
 .error-p {
   font-size: 18px;
   font-weight: 500;
@@ -234,6 +238,23 @@ body {
   color: var(--main-color);
 }
 
+/** Version Mobile **/
+@media (max-width: 767.98px) {
+  .error-page {
+    gap: 113px;
+  }
+  .error-page .error-title {
+    font-size: 96px;
+  }
+  .error-page .error-text {
+    font-size: 18px;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .error-page .error-p {
+    font-size: 14px;
+  }
+}
 .bloc {
   margin: 30px 50px 50px 50px;
   display: flex;
