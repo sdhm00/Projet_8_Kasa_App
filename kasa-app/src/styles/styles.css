@@ -131,6 +131,7 @@ body {
   flex-direction: column;
   gap: 30px;
   width: 70%;
+  position: relative;
 }
 
 #about-vector {
@@ -151,6 +152,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
+  z-index: 1;
 }
 
 .about-buttons h1 {
@@ -170,11 +173,20 @@ body {
 }
 
 .about-txt {
-  background: var(--second-color);
+  display: none;
+  background: var(--third-color);
+  border-radius: 10px 10px 5px 5px;
+  padding: 70px 20px 20px 20px;
+  position: absolute;
 }
 
 .about-txt p {
-  display: none;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--main-color);
+  margin: unset;
 }
 
 /** Version Mobile **/
@@ -200,6 +212,12 @@ body {
   }
   .about-block .info-block .about-buttons #about-vector {
     font-size: 16px;
+  }
+  .about-block .info-block .about-txt {
+    padding: 43px 20px 19px 20px;
+  }
+  .about-block .info-block .about-txt p {
+    font-size: 12px;
   }
 }
 .error-page {
