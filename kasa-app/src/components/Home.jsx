@@ -1,8 +1,10 @@
 import img1 from "../assets/img1.png"
 import "../styles/styles.css"
 import { Link } from "react-router-dom"
+import Logements from "../pages/Logements/logement.json";
 
 function Home() {
+  console.log(Logements)
   return (
     <div>
       <div className="bloc">
