@@ -1,8 +1,8 @@
-import "../styles/styles.css"
-import img3 from "../assets/img3.png"
-import imgMobile from "../assets/imgcarrousel.png"
+import "../../styles/styles.css"
+import img3 from "../../assets/img3.png"
+import imgMobile from "../../assets/imgcarrousel.png"
 
-function Logement() {
+function LogementsPage() {
     return (
       <div className="logement-block">
         <div className="logement-carousel">
@@ -58,4 +58,4 @@ function Logement() {
     );
   }
   
-  export default Logement;
+  export default LogementsPage;

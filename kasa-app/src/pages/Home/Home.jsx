@@ -1,7 +1,8 @@
-import img1 from "../assets/img1.png"
-import "../styles/styles.css"
+import img1 from "../../assets/img1.png"
+import "../../styles/styles.css"
 import { Link } from "react-router-dom"
-import Logements from "../pages/Logements/logement.json";
+import Logements from "../Logements/Logement.json";
+import Card from "../../components/Cards";
 
 function Home() {
   console.log(Logements)
@@ -17,9 +18,7 @@ function Home() {
         <div className="logement-background">
           <div className="logement">
             <Link to="/logement">
-              <div className="cards-background">
-                <p>Titre de la <br/>location</p>
-              </div>
+              <Card></Card>
             </Link>
             <Link to="/logement">
               <div className="cards-background">

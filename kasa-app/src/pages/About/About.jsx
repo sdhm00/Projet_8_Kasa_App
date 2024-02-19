@@ -1,5 +1,5 @@
-import img2 from "../assets/img2.png"
-import "../styles/styles.css"
+import img2 from "../../assets/img2.png"
+import "../../styles/styles.css"
 
 function About() {
   return (
