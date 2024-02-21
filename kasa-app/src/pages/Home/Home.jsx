@@ -1,11 +1,9 @@
 import img1 from "../../assets/img1.png"
 import "../../styles/styles.css"
-import { Link } from "react-router-dom"
 import Logements from "../Logements/Logement.json";
 import Card from "../../components/Cards";
 
 function Home() {
-  console.log(Logements)
   return (
     <div>
       <div className="bloc">
