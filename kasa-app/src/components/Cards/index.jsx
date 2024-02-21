@@ -1,23 +1,23 @@
-import { createElement } from "react";
-import Logements from "../../pages/Logements/Logement.json";
 import "../../styles/styles.css"
 import { Link } from "react-router-dom"
+import PropTypes from 'prop-types'
 
-function Card(Logements) {
-    const cardImg = document.createElement("img")
-    const cardTitle = document.createElement("p")
-    
-    for (let i = 0; i < Logements.length; i++) {
-        cardImg.src = Logements[i].cover
-        cardTitle.innerText = Logements[i].title
-
-        return (
+function Card({ cover, title }) {
+    return (
+        <Link to="/logement">
             <div className="cards-background">
-                {cardImg}
-                {cardTitle}
+                <img src={cover} alt="Logements cover" />
+                <span>
+                    <p>{title}</p>
+                </span>
             </div>
-        )
-    }
+        </Link>
+    )
+}
+
+Card.propTypes = {
+    title: PropTypes.string,
+    cover: PropTypes.string,
 }
  
 export default Card

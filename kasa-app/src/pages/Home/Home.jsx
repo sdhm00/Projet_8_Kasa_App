@@ -17,36 +17,22 @@ function Home() {
         </div>
         <div className="logement-background">
           <div className="logement">
-            <Link to="/logement">
-              <Card></Card>
-            </Link>
-            <Link to="/logement">
-              <div className="cards-background">
-                <p>Titre de la <br/>location</p>
-              </div>
-            </Link>
-            <Link to="/logement">
-              <div className="cards-background">
-                <p>Titre de la <br/>location</p>
-              </div>
-            </Link>
+            {Logements.slice(0, 3).map((logement, index) => (
+              <Card
+                key={`${logement.name}-${index}`}
+                cover={logement.cover}
+                title={logement.title}
+              />
+            ))}
           </div>
           <div className="logement">
-            <Link to="/logement">
-              <div className="cards-background">
-                <p>Titre de la <br/>location</p>
-              </div>
-            </Link>
-            <Link to="/logement">
-              <div className="cards-background">
-                <p>Titre de la <br/>location</p>
-              </div>
-            </Link>
-            <Link to="/logement">
-              <div className="cards-background">
-                <p>Titre de la <br/>location</p>
-              </div>
-            </Link>
+            {Logements.slice(3, 6).map((logement, index) => (
+              <Card
+                key={`${logement.name}-${index}`}
+                cover={logement.cover}
+                title={logement.title}
+              />
+            ))}
           </div>
         </div>
       </div>
