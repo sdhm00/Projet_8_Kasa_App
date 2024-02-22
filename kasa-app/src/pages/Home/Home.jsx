@@ -1,7 +1,7 @@
 import img1 from "../../assets/img1.png"
 import "../../styles/styles.css"
 import Logements from "../Logements/Logement.json";
-import Card from "../../components/Cards";
+import Card from "../../components/Cards/Cards";
 
 function Home() {
   return (

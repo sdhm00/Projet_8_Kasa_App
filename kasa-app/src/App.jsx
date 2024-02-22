@@ -3,7 +3,7 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Logement from "./pages/Logements/Logement";
+import Logement from "./pages/Logements/Logement.jsx";
 import ErrorPage from "./pages/Error/Error";
 
 function App() {
