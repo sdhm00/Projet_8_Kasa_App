@@ -2,9 +2,9 @@ import "../../styles/styles.css"
 import { Link } from "react-router-dom"
 import PropTypes from 'prop-types'
 
-function Card({ cover, title }) {
+function Card({ cover, title, id }) {
     return (
-        <Link to="/logement">
+        <Link to={`/logement/${id}`}>
             <div className="cards-background">
                 <img src={cover} alt="Logements cover" />
                 <span>
@@ -18,6 +18,7 @@ function Card({ cover, title }) {
 Card.propTypes = {
     title: PropTypes.string,
     cover: PropTypes.string,
+    id: PropTypes.string,
 }
  
 export default Card

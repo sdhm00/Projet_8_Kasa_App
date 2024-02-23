@@ -390,6 +390,7 @@ body {
 .logement-carousel {
   position: relative;
   width: 91%;
+  height: 415px;
 }
 
 .logement-img {
@@ -397,6 +398,7 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 100%;
 }
 
 .logement-img-mobile {
@@ -540,6 +542,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 76px;
+  width: 91%;
 }
 
 .block-text {

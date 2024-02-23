@@ -11,12 +11,14 @@
 .logement-carousel {
     position: relative;
     width: 91%;
+    height: 415px;
 }
 
 .logement-img {
     border-radius: 25px;
     width: 100%;
     object-fit: cover;
+    height: 100%;
 }
 
 .logement-img-mobile {
@@ -160,6 +162,7 @@
     display: flex;
     flex-direction: row;
     gap: 76px;
+    width: 91%;
 }
 
 .block-text {

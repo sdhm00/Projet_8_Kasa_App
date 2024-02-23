@@ -20,6 +20,7 @@ function Home() {
                 key={`${logement.name}-${index}`}
                 cover={logement.cover}
                 title={logement.title}
+                id={logement.id}
               />
             ))}
           </div>
@@ -29,6 +30,7 @@ function Home() {
                 key={`${logement.name}-${index}`}
                 cover={logement.cover}
                 title={logement.title}
+                id={logement.id}
               />
             ))}
           </div>
