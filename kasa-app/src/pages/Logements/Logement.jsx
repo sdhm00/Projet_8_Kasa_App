@@ -1,8 +1,9 @@
 import "../../styles/styles.css"
 import Logements from "../Logements/Logement.json";
-import { useParams } from 'react-router-dom';
+import { Route, useParams } from 'react-router-dom';
 import Tags from "../../components/Logement-Page/Tags";
 import Carrousel from "../../components/Carrousel/Carrousel";
+import ErrorPage from "../Error/Error";
 
 function LogementsPage() {
   const { id } = useParams();
@@ -10,7 +11,7 @@ function LogementsPage() {
   const logement = Logements.find(item => item.id === id);
 
   if (!logement) {
-      return <div>Logement not found</div>;
+      return <Route path="*" element={<ErrorPage />}></Route>;
   }
     return (
       <div className="logement-block">
