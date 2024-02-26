@@ -1,14 +1,13 @@
 import "../../styles/styles.css"
-import PropTypes from 'prop-types'
 
 function Tags({ tags }) {
     return (
-        <p>{tags}</p>
+        <div className="logement-tag">
+        {tags.map((tag,index) =>
+            <p key={index}>{tag}</p>
+        )}
+        </div>
     )
-}
-
-Tags.propTypes = {
-    tags: PropTypes.string,
 }
  
 export default Tags

@@ -1,11 +1,12 @@
 import "../../styles/styles.css"
 import Logements from "../Logements/Logement.json";
 import { useParams } from 'react-router-dom';
+import Tags from "../../components/Logement-Page/Tags";
+import Carrousel from "../../components/Carrousel/Carrousel";
 
 function LogementsPage() {
   const { id } = useParams();
 
-  // Find the logement with the matching id
   const logement = Logements.find(item => item.id === id);
 
   if (!logement) {
@@ -13,21 +14,14 @@ function LogementsPage() {
   }
     return (
       <div className="logement-block">
-        <div className="logement-carousel">
-          <i className="fa-solid fa-chevron-left" id="arrow-left"></i>
-          <img src={logement.cover} alt="Logement img" className="logement-img" />
-          <p className="carousel-txt">1/4</p>
-          <i className="fa-solid fa-chevron-right" id="arrow-right"></i>
-        </div>
+        <Carrousel pictures={logement.pictures}/>
         <div className="description-block">
           <div className="logement-description">
             <div className="logement-title">
               <h1>{logement.title}</h1>
               <p>{logement.location}</p>
             </div>
-            <div className="logement-tag">
-              <ul>{logement.tags}</ul>
-            </div>
+            <Tags tags={logement.tags}/>
           </div>
           <div className="logement-rating">
             <div className="logement-host">

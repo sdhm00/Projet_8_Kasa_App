@@ -21,6 +21,10 @@
     height: 100%;
 }
 
+.img-hidden {
+    display: none;
+}
+
 .logement-img-mobile {
     display: none;
     border-radius: 25px;
@@ -123,7 +127,7 @@
 }
 
 .logement-tag p {
-    width: 115px;
+    min-width: 115px;
     height: 25px;
     border-radius: 10px;
     font-size: 14px;
@@ -134,6 +138,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 10px;
 }
 
 .logement-stars {
