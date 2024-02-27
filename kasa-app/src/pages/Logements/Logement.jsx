@@ -1,9 +1,9 @@
 import "../../styles/styles.css"
 import Logements from "../Logements/Logement.json";
-import { Route, useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import Tags from "../../components/Logement-Page/Tags";
 import Carrousel from "../../components/Carrousel/Carrousel";
-import ErrorPage from "../Error/Error";
+import Rating from "../../components/Logement-Page/Rating";
 
 function LogementsPage() {
   const { id } = useParams();
@@ -11,7 +11,7 @@ function LogementsPage() {
   const logement = Logements.find(item => item.id === id);
 
   if (!logement) {
-      return <Route path="*" element={<ErrorPage />}></Route>;
+    return <Navigate to="/error" />;
   }
     return (
       <div className="logement-block">
@@ -30,11 +30,7 @@ function LogementsPage() {
               <img className="host-picture" src={logement.host.picture}/>
             </div>
             <div className="logement-stars">
-              <i class="fa-solid fa-star active-stars"></i>
-              <i class="fa-solid fa-star active-stars"></i>
-              <i class="fa-solid fa-star active-stars"></i>
-              <i class="fa-solid fa-star inactive-stars"></i>
-              <i class="fa-solid fa-star inactive-stars"></i>
+              <Rating rating={logement.rating}/>
             </div>
           </div>
         </div>
