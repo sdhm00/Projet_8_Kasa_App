@@ -92,7 +92,7 @@ body {
   color: var(--main-color);
   font-size: 24px;
 }
-.header a:focus {
+.header a.active {
   text-decoration: underline;
 }
 
