@@ -4,6 +4,8 @@ import { useParams, Navigate } from 'react-router-dom';
 import Tags from "../../components/Logement-Page/Tags";
 import Carrousel from "../../components/Carrousel/Carrousel";
 import Rating from "../../components/Logement-Page/Rating";
+import Equipments from "../../components/Logement-Page/Equipments";
+import Description from "../../components/Logement-Page/Description";
 
 function LogementsPage() {
   const { id } = useParams();
@@ -40,14 +42,14 @@ function LogementsPage() {
                 <h2>Description</h2>
                 <i className="fa-solid fa-chevron-up" id="about-vector"></i>
               </div>
-              {/* <p>{description}</p> */}
+              <Description description={logement.description}/>
             </div>
             <div className="block-text">
               <div className="description-buttons">
                 <h2>Équipements</h2>
                 <i className="fa-solid fa-chevron-up" id="about-vector"></i>
               </div>
-              {/* <p>{equipements}</p> */}
+              <Equipments equipments={logement.equipments}/>
             </div>
           </div>
         </div>

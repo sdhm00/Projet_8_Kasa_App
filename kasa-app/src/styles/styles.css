@@ -555,7 +555,12 @@ body {
 }
 
 .block-text p {
-  display: none;
+  margin: unset;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .description-buttons {
@@ -565,8 +570,9 @@ body {
   justify-content: space-between;
   padding: 10px 20px 10px 10px;
   border-radius: 10px;
+  position: relative;
+  z-index: 1;
 }
-
 .description-buttons h2 {
   margin: unset;
   font-size: 18px;
@@ -575,6 +581,18 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: var(--second-color);
+}
+.description-buttons #about-vector {
+  padding-right: unset;
+}
+
+.dropdown-block {
+  background: var(--third-color);
+  border-radius: 10px 10px 5px 5px;
+  color: var(--main-color);
+  padding: 30px 15px 15px 15px;
+  margin: -20px 0 0 0;
+  display: none;
 }
 
 /** Version Mobile **/
