@@ -37,20 +37,8 @@ function LogementsPage() {
           </div>
         </div>
           <div className="description-text">
-            <div className="block-text">
-              <div className="description-buttons">
-                <h2>Description</h2>
-                <i className="fa-solid fa-chevron-up" id="about-vector"></i>
-              </div>
-              <Description description={logement.description}/>
-            </div>
-            <div className="block-text">
-              <div className="description-buttons">
-                <h2>Équipements</h2>
-                <i className="fa-solid fa-chevron-up" id="about-vector"></i>
-              </div>
-              <Equipments equipments={logement.equipments}/>
-            </div>
+            <Description description={logement.description}/>
+            <Equipments equipments={logement.equipments}/>
           </div>
         </div>
     );
