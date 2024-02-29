@@ -23,18 +23,22 @@ function DropdownLogements({logement}) {
                     <h2>Description</h2>
                     <i className={`fa-solid fa-chevron-up ${descriptionRotated ? 'rotated' : ''}`} id="about-vector" onClick={handleDescriptionRotate}></i>
                 </div>
-                {descriptionRotated && (
-                    <Description description={logement.description} />
-                )}
+                <div>
+                    {descriptionRotated && (
+                        <Description description={logement.description} />
+                    )}
+                </div>
             </div>
             <div className="block-text">
                 <div className="description-buttons">
                     <h2>Equipements</h2>
                     <i className={`fa-solid fa-chevron-up ${equipmentsRotated ? 'rotated' : ''}`} id="about-vector" onClick={handleEquipmentsRotate}></i>
                 </div>
-                {equipmentsRotated && (
-                    <Equipments equipments={logement.equipments} />
-                )}
+                <div>
+                    {equipmentsRotated && (
+                        <Equipments equipments={logement.equipments} />
+                    )}
+                </div>
             </div>
         </div>
     )

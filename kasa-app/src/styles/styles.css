@@ -558,6 +558,7 @@ body {
 
 .block-text {
   width: 50%;
+  overflow: hidden;
 }
 
 .block-text p {
@@ -598,8 +599,18 @@ body {
   color: var(--main-color);
   padding: 30px 15px 15px 15px;
   margin: -20px 0 0 0;
+  animation: open 0.8s ease-out;
 }
 
+@keyframes open {
+  0% {
+    max-height: 0;
+    overflow: hidden;
+  }
+  100% {
+    max-height: 1000px;
+  }
+}
 /** Version Mobile **/
 @media (max-width: 767.98px) {
   .logement-block {
