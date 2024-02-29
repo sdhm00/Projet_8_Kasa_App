@@ -215,7 +215,8 @@
     color: var(--main-color);
     padding: 30px 15px 15px 15px;
     margin: -20px 0 0 0;
-    animation: open 0.8s ease-out
+    animation: open 0.8s ease-out;
+    min-height: 130px;
 }
 
 @keyframes open {
