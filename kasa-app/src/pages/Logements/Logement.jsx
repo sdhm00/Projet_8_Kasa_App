@@ -35,9 +35,7 @@ function LogementsPage() {
             </div>
           </div>
         </div>
-          <div className="description-text">
-            <DropdownLogements logement={logement}/>
-          </div>
+          <DropdownLogements logement={logement}/>
         </div>
     );
   }
