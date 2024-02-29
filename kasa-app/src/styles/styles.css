@@ -400,26 +400,22 @@ body {
   align-items: center;
   margin: 50px 0;
 }
-
-.logement-carousel {
+.logement-block .logement-carousel {
   position: relative;
   width: 91%;
   height: auto;
 }
-
-.logement-img {
+.logement-block .logement-carousel .logement-img {
   border-radius: 25px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100%;
+  height: 415px;
 }
-
-.img-hidden {
+.logement-block .logement-carousel .img-hidden {
   display: none;
 }
-
-#arrow-left, #arrow-right {
+.logement-block .logement-carousel #arrow-left, .logement-block .logement-carousel #arrow-right {
   font-size: 96px;
   color: var(--second-color);
   position: absolute;
@@ -430,13 +426,11 @@ body {
   display: flex;
   align-items: center;
 }
-
-#arrow-right {
+.logement-block .logement-carousel #arrow-right {
   justify-content: end;
   padding: 0 40px;
 }
-
-.carousel-txt {
+.logement-block .logement-carousel .carousel-txt {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -458,61 +452,29 @@ body {
   gap: 20px;
   justify-content: space-between;
 }
-
-.logement-description {
+.description-block .logement-description {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
-
-.logement-title h1 {
+.description-block .logement-description .logement-title h1 {
   color: var(--main-color);
   margin: unset;
   font-size: 36px;
   font-weight: 500;
 }
-
-.logement-title p {
+.description-block .logement-description .logement-title p {
   color: var(--main-color);
   margin: unset;
   font-size: 18px;
   font-weight: 500;
 }
-
-.logement-host {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-}
-
-.logement-host p {
-  margin: unset;
-  color: var(--main-color);
-}
-
-.host-picture {
-  width: 64px;
-  height: 64px;
-  background-color: var(--host-color);
-  border-radius: 100%;
-}
-
-.logement-rating {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logement-tag {
+.description-block .logement-description .logement-tag {
   display: flex;
   flex-direction: row;
   gap: 5px;
 }
-
-.logement-tag p {
+.description-block .logement-description .logement-tag p {
   min-width: 115px;
   height: 25px;
   border-radius: 10px;
@@ -526,13 +488,34 @@ body {
   align-items: center;
   padding: 0 10px;
 }
-
-.logement-stars {
+.description-block .logement-rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.description-block .logement-rating .logement-host {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.description-block .logement-rating .logement-host p {
+  margin: unset;
+  color: var(--main-color);
+}
+.description-block .logement-rating .logement-host .host-picture {
+  width: 64px;
+  height: 64px;
+  background-color: var(--host-color);
+  border-radius: 100%;
+}
+.description-block .logement-rating .logement-stars {
   display: flex;
   flex-direction: row;
 }
-
-.logement-stars i {
+.description-block .logement-rating .logement-stars i {
   width: 36px;
   height: 36px;
   font-size: 25px;
@@ -555,13 +538,11 @@ body {
   gap: 76px;
   width: 91%;
 }
-
-.block-text {
+.description-text .block-text {
   width: 50%;
   overflow: hidden;
 }
-
-.block-text p {
+.description-text .block-text p {
   margin: unset;
   font-size: 18px;
   font-weight: 400;
@@ -569,8 +550,7 @@ body {
   letter-spacing: 0em;
   text-align: left;
 }
-
-.description-buttons {
+.description-text .description-buttons {
   background-color: var(--main-color);
   display: flex;
   flex-direction: row;
@@ -580,7 +560,7 @@ body {
   position: relative;
   z-index: 1;
 }
-.description-buttons h2 {
+.description-text .description-buttons h2 {
   margin: unset;
   font-size: 18px;
   font-weight: 700;
@@ -589,7 +569,7 @@ body {
   text-align: left;
   color: var(--second-color);
 }
-.description-buttons #about-vector {
+.description-text .description-buttons #about-vector {
   padding: unset;
 }
 
@@ -621,20 +601,21 @@ body {
   .logement-block .logement-carousel {
     height: 255px;
   }
-  .logement-block #arrow-left, .logement-block #arrow-right {
+  .logement-block .logement-carousel #arrow-left, .logement-block .logement-carousel #arrow-right {
     font-size: 24px;
   }
-  .logement-block #arrow-right {
+  .logement-block .logement-carousel #arrow-right {
     padding: 0 10px;
   }
-  .logement-block .carousel-txt {
+  .logement-block .logement-carousel .carousel-txt {
     display: none;
   }
-  .logement-block .logement-img {
+  .logement-block .logement-carousel .logement-img {
     border-radius: 25px;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+    height: 100%;
   }
   .logement-block .description-block {
     display: flex;

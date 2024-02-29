@@ -30,7 +30,7 @@ function LogementsPage() {
               <p>{logement.host.name}</p>
               <img className="host-picture" src={logement.host.picture}/>
             </div>
-            <div className="logement-stars">
+            <div>
               <Rating rating={logement.rating}/>
             </div>
           </div>
