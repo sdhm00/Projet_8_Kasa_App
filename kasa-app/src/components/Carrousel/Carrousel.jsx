@@ -2,7 +2,6 @@ import "../../styles/styles.css"
 import { useState } from 'react'
 
 function Carrousel({pictures}) {
-    console.log(pictures)
     const [ slideIndex, setSlide ] = useState(0);
 
     const nextSlide = () => {

@@ -21,8 +21,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 15px;
+    padding: 0 15px;
+    transform-origin: center center;
 }
+
+.rotated {
+    transform: rotate(-180deg);
+    transition: transform 0.3s ease;
+}  
 
 .about-buttons {
     width: 100%;

@@ -140,7 +140,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 15px;
+  padding: 0 15px;
+  transform-origin: center center;
+}
+
+.rotated {
+  transform: rotate(-180deg);
+  transition: transform 0.3s ease;
 }
 
 .about-buttons {
@@ -583,7 +589,7 @@ body {
   color: var(--second-color);
 }
 .description-buttons #about-vector {
-  padding-right: unset;
+  padding: unset;
 }
 
 .dropdown-block {
