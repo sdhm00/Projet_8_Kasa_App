@@ -4,8 +4,7 @@ import { useParams, Navigate } from 'react-router-dom';
 import Tags from "../../components/Logement-Page/Tags";
 import Carrousel from "../../components/Carrousel/Carrousel";
 import Rating from "../../components/Logement-Page/Rating";
-import Equipments from "../../components/Logement-Page/Equipments";
-import Description from "../../components/Logement-Page/Description";
+import DropdownLogements from "../../components/Dropdown/Dropdown-Logement";
 
 function LogementsPage() {
   const { id } = useParams();
@@ -37,8 +36,7 @@ function LogementsPage() {
           </div>
         </div>
           <div className="description-text">
-            <Description description={logement.description}/>
-            <Equipments equipments={logement.equipments}/>
+            <DropdownLogements logement={logement}/>
           </div>
         </div>
     );
