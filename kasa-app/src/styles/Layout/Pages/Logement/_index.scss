@@ -11,7 +11,7 @@
 .logement-carousel {
     position: relative;
     width: 91%;
-    height: 415px;
+    height: auto;
 }
 
 .logement-img {
@@ -23,13 +23,6 @@
 
 .img-hidden {
     display: none;
-}
-
-.logement-img-mobile {
-    display: none;
-    border-radius: 25px;
-    width: 100%;
-    object-fit: cover;
 }
 
 #arrow-left, #arrow-right {
@@ -237,6 +230,10 @@
         margin: 27px 0;
         gap: 10px;
 
+        .logement-carousel {
+            height: 255px;
+        }
+
         #arrow-left, #arrow-right {
             font-size: 24px;
         }
@@ -250,11 +247,9 @@
         }
     
         .logement-img {
-            display: none;
-        }
-    
-        .logement-img-mobile {
-            display: unset;
+            border-radius: 25px;
+            width: 100%;
+            object-fit: cover;
         }
 
         .description-block {
@@ -334,6 +329,18 @@
                     #about-vector {
                         font-size: 13px;
                         padding: unset;
+                    }
+                }
+
+                .dropdown-block {
+                    min-height: unset;
+                    
+                    p {
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 17px;
+                        letter-spacing: 0em;
+                        text-align: left;
                     }
                 }
             }
