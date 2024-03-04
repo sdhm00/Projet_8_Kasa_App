@@ -15,11 +15,7 @@ function Carrousel({pictures}) {
     return (
         <div className="logement-carousel">
             <i className="fa-solid fa-chevron-left" id="arrow-left" onClick={prevSlide}></i>
-            {pictures.map((picture, index) => {
-                return (
-                    <img src={picture} alt="Carrousel img" key={index} className={slideIndex === index ? "logement-img":"logement-img img-hidden" }  />
-                )
-            })}
+                <img src={pictures[slideIndex]} alt="Carrousel img" className="logement-img"  />
             <span className="carousel-txt">{slideIndex + 1}/{pictures.length}</span>
             <i className="fa-solid fa-chevron-right" id="arrow-right" onClick={nextSlide}></i>
         </div>
