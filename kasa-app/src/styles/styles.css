@@ -329,7 +329,6 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
 }
 .logement a {
   color: var(--second-color);
