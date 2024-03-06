@@ -3,11 +3,7 @@ import PropTypes from 'prop-types'
 import { useState, useEffect } from 'react';
 
 function Rating({ rating }) {
-    const [activeStars, setActiveStars] = useState(0);
-
-    useEffect(() => {
-        setActiveStars(Math.floor(rating));
-    }, [rating]);
+    const activeStars = Math.floor(rating);
 
     return (
         <div className="logement-stars">
