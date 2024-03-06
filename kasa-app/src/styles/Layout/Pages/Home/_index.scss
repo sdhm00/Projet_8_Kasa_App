@@ -18,12 +18,12 @@
 /** Logements **/
 
 .logement-background {
-    height: 829px;
     border-radius: 25px;
     background: var(--third-color);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 10px;
 
     img {
         object-fit: cover;
@@ -41,10 +41,8 @@
 .logement {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    height: 40%;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
 
     a {
         color: var(--second-color);
@@ -52,7 +50,10 @@
         display: flex;
         align-items: flex-end;
         border-radius: 10px;
-        width: 27%;
+        width: auto;
+        margin: 30px;
+        height: 340px;
+        max-width: 340px;
     }
 }
 
@@ -99,6 +100,7 @@
         height: unset;
         background: unset;
         gap: 22px;
+        padding: unset;
 
         .logement {
             display: flex;
@@ -109,6 +111,7 @@
             a {
                 width: 100%;
                 height: 255px;
+                margin: unset;
             }
         }
     }

@@ -305,12 +305,12 @@ body {
 
 /** Logements **/
 .logement-background {
-  height: 829px;
   border-radius: 25px;
   background: var(--third-color);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding: 10px;
 }
 .logement-background img {
   -o-object-fit: cover;
@@ -328,10 +328,8 @@ body {
 .logement {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  height: 40%;
-  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .logement a {
   color: var(--second-color);
@@ -339,7 +337,10 @@ body {
   display: flex;
   align-items: flex-end;
   border-radius: 10px;
-  width: 27%;
+  width: auto;
+  margin: 30px;
+  height: 340px;
+  max-width: 340px;
 }
 
 .cards-background {
@@ -379,6 +380,7 @@ body {
     height: unset;
     background: unset;
     gap: 22px;
+    padding: unset;
   }
   .logement-background .logement {
     display: flex;
@@ -389,6 +391,7 @@ body {
   .logement-background .logement a {
     width: 100%;
     height: 255px;
+    margin: unset;
   }
 }
 .logement-block {
