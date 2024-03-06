@@ -178,30 +178,28 @@
             text-align: left;
         }
     }
+}
 
-    .description-buttons {
-        background-color: var(--main-color);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 10px 20px 10px 10px;
-        border-radius: 10px;
-        position: relative;
-        z-index: 1;
-    
-        h2 {
-            margin: unset;
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 26px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: var(--second-color);
-        }
-    
-        #about-vector {
-            padding: unset;
-        }
+.description-buttons .dropdown {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px 10px 10px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+
+    h1 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    #about-vector {
+        padding: unset;
     }
 }
 

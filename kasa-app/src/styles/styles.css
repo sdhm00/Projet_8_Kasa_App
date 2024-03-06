@@ -52,6 +52,25 @@ body {
     height: 111px;
   }
 }
+.dropdown-button {
+  background: var(--main-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.dropdown-button h1 {
+  color: var(--second-color);
+  margin: unset;
+}
+
+/** About page **/
+.about-buttons .dropdown {
+  width: 100%;
+}
+
 .box {
   background-color: black;
   color: var(--second-color);
@@ -131,7 +150,6 @@ body {
   flex-direction: column;
   gap: 30px;
   width: 70%;
-  position: relative;
 }
 
 #about-vector {
@@ -158,14 +176,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  z-index: 1;
 }
 
 .about-buttons h1 {
   font-size: 24px;
   font-weight: 500;
-  color: var(--second-color);
-  margin: unset;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -552,7 +567,8 @@ body {
   letter-spacing: 0em;
   text-align: left;
 }
-.description-text .description-buttons {
+
+.description-buttons .dropdown {
   background-color: var(--main-color);
   display: flex;
   flex-direction: row;
@@ -562,16 +578,14 @@ body {
   position: relative;
   z-index: 1;
 }
-.description-text .description-buttons h2 {
-  margin: unset;
+.description-buttons .dropdown h1 {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   letter-spacing: 0em;
   text-align: left;
-  color: var(--second-color);
 }
-.description-text .description-buttons #about-vector {
+.description-buttons .dropdown #about-vector {
   padding: unset;
 }
 

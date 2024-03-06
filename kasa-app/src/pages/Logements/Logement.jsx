@@ -4,7 +4,8 @@ import { useParams, Navigate } from 'react-router-dom';
 import Tags from "../../components/Logement-Page/Tags";
 import Carrousel from "../../components/Carrousel/Carrousel";
 import Rating from "../../components/Logement-Page/Rating";
-import DropdownLogements from "../../components/Dropdown/Dropdown-Logement";
+import Dropdown from "../../components/Dropdown/Dropdown";
+import PropTypes from 'prop-types'
 
 function LogementsPage() {
   const { id } = useParams();
@@ -35,9 +36,35 @@ function LogementsPage() {
             </div>
           </div>
         </div>
-          <DropdownLogements logement={logement}/>
+          <div className="description-text">
+            <div className="block-text">
+              <div className="description-buttons">
+                <Dropdown title="Description">
+                  <div className="dropdown-block">
+                    <p>{logement.description}</p>
+                  </div>
+                </Dropdown>
+              </div>
+            </div>
+            <div className="block-text">
+              <div className="description-buttons">
+                <Dropdown title="Equipements">
+                  {logement.equipments.map((equipment, index) =>
+                    <div className="dropdown-block">
+                      <p key={index}>{equipment}</p>
+                    </div>
+                  )}
+                </Dropdown>
+              </div>
+            </div>
+          </div>
         </div>
     );
   }
+
+LogementsPage.propTypes = {
+  description: PropTypes.string,
+  equipments: PropTypes.arrayOf(PropTypes.string),
+}
 
 export default LogementsPage;

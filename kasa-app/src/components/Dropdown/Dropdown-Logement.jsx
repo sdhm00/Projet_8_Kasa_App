@@ -1,43 +1,24 @@
 import "../../styles/styles.css"
 import PropTypes from 'prop-types'
-import Description from "../Logement-Page/Description";
-import Equipments from "../Logement-Page/Equipments";
-import { useState, useEffect } from 'react';
+import Dropdown from "./Dropdown";
 
-function DropdownLogements({logement}) {
-    const [descriptionRotated, setDescriptionRotated] = useState(false);
-    const [equipmentsRotated, setEquipmentsRotated] = useState(false);
-
-    const handleDescriptionRotate = () => {
-        setDescriptionRotated(prevRotated => !prevRotated);
-    };
-
-    const handleEquipmentsRotate = () => {
-        setEquipmentsRotated(prevRotated => !prevRotated);
-    };
-
+function DropdownLogements({description, equipments}) {
     return (
         <div className="description-text">
             <div className="block-text">
                 <div className="description-buttons">
-                    <h2>Description</h2>
-                    <i className={`fa-solid fa-chevron-up ${descriptionRotated ? 'rotated' : ''}`} id="about-vector" onClick={handleDescriptionRotate}></i>
-                </div>
-                <div>
-                    {descriptionRotated && (
-                        <Description description={logement.description} />
-                    )}
+                    <Dropdown title="Description">
+                        <p>{description}</p>
+                    </Dropdown>
                 </div>
             </div>
             <div className="block-text">
                 <div className="description-buttons">
-                    <h2>Equipements</h2>
-                    <i className={`fa-solid fa-chevron-up ${equipmentsRotated ? 'rotated' : ''}`} id="about-vector" onClick={handleEquipmentsRotate}></i>
-                </div>
-                <div>
-                    {equipmentsRotated && (
-                        <Equipments equipments={logement.equipments} />
-                    )}
+                    <Dropdown title="Equipements">
+                        {equipments.map((equipment,index) =>
+                            <p key={index}>{equipment}</p>
+                        )}
+                    </Dropdown>
                 </div>
             </div>
         </div>
@@ -45,7 +26,8 @@ function DropdownLogements({logement}) {
 }
 
 DropdownLogements.propTypes = {
-    logement: PropTypes.object.isRequired,
+    description: PropTypes.string,
+    equipments: PropTypes.string,
 }
  
 export default DropdownLogements

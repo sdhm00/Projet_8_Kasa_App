@@ -3,6 +3,7 @@ import "../../styles/styles.css"
 import { useState, useEffect } from 'react';
 import About from "./About.json";
 import PropTypes from 'prop-types';
+import Dropdown from "../../components/Dropdown/Dropdown";
 
 function Aboutinfos() {
   return (
@@ -12,16 +13,19 @@ function Aboutinfos() {
         <p className="img-background"></p>
       </div>
       <div className="info-block">
-        <div className="about-infos">
           {About.map((about) => (
-            <div className="about-buttons">
-              <h1>{about.title}</h1>
-              <i className="fa-solid fa-chevron-up" id="about-vector"></i>
+            <div className="about-infos">
+              <div className="about-buttons">
+                <Dropdown title={about.title}>
+                  <div className="about-txt">
+                    <p>{about.text}</p>
+                  </div>
+                </Dropdown>
+              </div>
             </div>
           ))}
         </div>
       </div>
-    </div>
   );
 }
 
