@@ -15,17 +15,17 @@ function Aboutinfos() {
       <div className="info-block">
         <div className="about-infos">
           {About.map((about) => (
-              <div className="about-buttons">
-                <Dropdown title={about.title}>
-                  <div className="about-txt">
-                    <p>{about.text}</p>
-                  </div>
-                </Dropdown>
-              </div>
-            ))}
-          </div>
+            <div className="about-buttons">
+              <Dropdown title={about.title}>
+                <div className="about-txt">
+                  <p>{about.text}</p>
+                </div>
+              </Dropdown>
+            </div>
+          ))}
         </div>
       </div>
+    </div>
   );
 }
 
