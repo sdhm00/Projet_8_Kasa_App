@@ -53,9 +53,7 @@ body {
   }
 }
 .dropdown-button {
-  background: var(--main-color);
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   height: 100%;
   position: relative;
@@ -86,6 +84,8 @@ body {
 
 /** About page **/
 .about-buttons .dropdown .dropdown-button {
+  background: var(--main-color);
+  flex-direction: row;
   border-radius: 5px;
   height: 52px;
   display: flex;
@@ -106,6 +106,33 @@ body {
 }
 
 /** Logements **/
+.description-buttons {
+  display: flex;
+}
+.description-buttons .dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.description-buttons .dropdown .dropdown-button {
+  background: var(--main-color);
+  padding: 10px 20px 10px 10px;
+  border-radius: 10px;
+}
+.description-buttons .dropdown .dropdown-button h1 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.description-buttons .dropdown .dropdown-button #about-vector {
+  padding: unset;
+}
+
 /** Version Mobile **/
 @media (max-width: 767.98px) {
   .about-buttons .dropdown .dropdown-button {
@@ -218,6 +245,9 @@ body {
   .about-block .info-block {
     width: 100%;
     gap: 20px;
+  }
+  .about-block .info-block .about-infos {
+    gap: 19px;
   }
   .about-block .info-block .about-buttons {
     width: 100%;
@@ -479,7 +509,6 @@ body {
   gap: 5px;
 }
 .description-block .logement-description .logement-tag p {
-  min-width: 115px;
   height: 25px;
   border-radius: 10px;
   font-size: 14px;
@@ -543,8 +572,7 @@ body {
   width: 91%;
 }
 .description-text .block-text {
-  width: 50%;
-  overflow: hidden;
+  width: 100%;
 }
 .description-text .block-text p {
   margin: unset;
@@ -555,40 +583,6 @@ body {
   text-align: left;
 }
 
-.description-buttons .dropdown {
-  background-color: var(--main-color);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px 20px 10px 10px;
-  border-radius: 10px;
-  position: relative;
-  z-index: 1;
-}
-.description-buttons .dropdown h1 {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-.description-buttons .dropdown #about-vector {
-  padding: unset;
-}
-
-.dropdown-block {
-  min-height: 130px;
-}
-
-@keyframes open {
-  0% {
-    max-height: 0;
-    overflow: hidden;
-  }
-  100% {
-    max-height: 1000px;
-  }
-}
 /** Version Mobile **/
 @media (max-width: 767.98px) {
   .logement-block {
@@ -656,30 +650,31 @@ body {
     font-size: 13px;
   }
   .logement-block .description-text {
-    gap: 20px;
+    display: flex;
     flex-direction: column;
-    width: 91%;
+    gap: 20px;
   }
   .logement-block .description-text .block-text {
     width: 100%;
   }
-  .logement-block .description-text .block-text .description-buttons {
-    height: 15px;
-    align-items: center;
+  .logement-block .description-text .block-text .dropdown .dropdown-button {
+    padding: 5px 10px;
+    border-radius: 5px;
   }
-  .logement-block .description-text .block-text .description-buttons h2 {
+  .logement-block .description-text .block-text .dropdown .dropdown-button h1 {
     font-size: 13px;
     padding: unset;
     font-weight: 500;
   }
-  .logement-block .description-text .block-text .description-buttons #about-vector {
+  .logement-block .description-text .block-text .dropdown .dropdown-button #about-vector {
     font-size: 13px;
     padding: unset;
   }
-  .logement-block .description-text .block-text .dropdown-block {
-    min-height: unset;
+  .logement-block .description-text .block-text .dropdown .dropdown-txt {
+    padding: 10px;
+    margin: -5px 0 0 0;
   }
-  .logement-block .description-text .block-text .dropdown-block p {
+  .logement-block .description-text .block-text .dropdown .dropdown-txt .dropdown-block p {
     font-size: 12px;
     font-weight: 400;
     line-height: 17px;

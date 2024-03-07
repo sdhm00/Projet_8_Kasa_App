@@ -93,7 +93,6 @@
             gap: 5px;
 
             p {
-                min-width: 115px;
                 height: 25px;
                 border-radius: 10px;
                 font-size: 14px;
@@ -166,8 +165,7 @@
     width: 91%;
 
     .block-text {
-        width: 50%;
-        overflow: hidden;
+        width: 100%;
 
         p {
             margin: unset;
@@ -177,43 +175,6 @@
             letter-spacing: 0em;
             text-align: left;
         }
-    }
-}
-
-.description-buttons .dropdown {
-    background-color: var(--main-color);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 20px 10px 10px;
-    border-radius: 10px;
-    position: relative;
-    z-index: 1;
-
-    h1 {
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 26px;
-        letter-spacing: 0em;
-        text-align: left;
-    }
-
-    #about-vector {
-        padding: unset;
-    }
-}
-
-.dropdown-block {
-    min-height: 130px;
-}
-
-@keyframes open {
-    0% {
-        max-height: 0;
-        overflow: hidden;
-    }
-    100% {
-        max-height: 1000px;
     }
 }
 
@@ -305,38 +266,45 @@
         }
 
         .description-text {
-            gap: 20px;
+            display: flex;
             flex-direction: column;
-            width: 91%;
+            gap: 20px;
 
             .block-text {
                 width: 100%;
 
-                .description-buttons {
-                    height: 15px;
-                    align-items: center;
+                .dropdown {
+                    
+                    .dropdown-button {
+                        padding: 5px 10px ;
+                        border-radius: 5px;
 
-                    h2 {
-                        font-size: 13px;
-                        padding: unset;
-                        font-weight: 500;
+                        h1 {
+                            font-size: 13px;
+                            padding: unset;
+                            font-weight: 500;
+                        }
+
+                        #about-vector {
+                            font-size: 13px;
+                            padding: unset;
+                        }
                     }
 
-                    #about-vector {
-                        font-size: 13px;
-                        padding: unset;
-                    }
-                }
+                    .dropdown-txt {
+                        padding: 10px;
+                        margin: -5px 0 0 0;
 
-                .dropdown-block {
-                    min-height: unset;
+                        .dropdown-block {
 
-                    p {
-                        font-size: 12px;
-                        font-weight: 400;
-                        line-height: 17px;
-                        letter-spacing: 0em;
-                        text-align: left;
+                            p {
+                                font-size: 12px;
+                                font-weight: 400;
+                                line-height: 17px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                            }
+                        }
                     }
                 }
             }
