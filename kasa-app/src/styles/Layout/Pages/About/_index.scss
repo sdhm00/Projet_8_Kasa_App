@@ -34,14 +34,11 @@
         gap: 19px;
 
         .info-block {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
             width: 100%;
+            gap: 20px;
 
             .about-buttons {
                 width: 100%;
-                height: 30px;
 
                 h1 {
                     font-size: 13px;

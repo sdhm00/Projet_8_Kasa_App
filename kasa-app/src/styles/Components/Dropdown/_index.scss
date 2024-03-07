@@ -35,7 +35,7 @@
 
 .about-buttons .dropdown {
     .dropdown-button {
-        border-radius: 10px 10px 5px 5px;
+        border-radius: 5px;
         height : 52px;
         display: flex;
         align-items: center;
@@ -54,4 +54,24 @@
         color: var(--main-color);
         margin: unset;
     }
+}
+
+/** Logements **/
+
+/** Version Mobile **/
+
+@media (max-width: 767.98px) {
+
+.about-buttons .dropdown {
+    .dropdown-button {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .dropdown-txt {
+        padding: unset;
+    }
+}
 }
