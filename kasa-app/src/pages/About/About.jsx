@@ -13,8 +13,8 @@ function Aboutinfos() {
         <p className="img-background"></p>
       </div>
       <div className="info-block">
+        <div className="about-infos">
           {About.map((about) => (
-            <div className="about-infos">
               <div className="about-buttons">
                 <Dropdown title={about.title}>
                   <div className="about-txt">
@@ -22,8 +22,8 @@ function Aboutinfos() {
                   </div>
                 </Dropdown>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
   );

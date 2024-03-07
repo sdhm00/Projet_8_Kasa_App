@@ -52,15 +52,7 @@
 .about-infos {
     display: flex;
     flex-direction: column;
-}
-
-.about-txt p {
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: 0em;
-    text-align: left;
-    color: var(--main-color);
-    margin: unset;
+    gap: 30px;
 }
 
 /** Version Mobile **/
