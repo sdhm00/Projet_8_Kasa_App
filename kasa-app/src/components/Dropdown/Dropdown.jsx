@@ -13,7 +13,7 @@ function Dropdown({ title, children }) {
     <div className="dropdown">
       <div className='dropdown-button' onClick={toggleDropdown}>
         <h1>{title}</h1>
-        <i className={`fa-solid fa-chevron-up${isOpen ? 'rotated' : ''}`} id="about-vector"></i>
+        <i className={`fa-solid fa-chevron-${isOpen ? 'down' : 'up'}`} id="about-vector"></i>
       </div>
       {isOpen && <div>{children}</div>}
     </div>

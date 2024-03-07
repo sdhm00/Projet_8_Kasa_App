@@ -70,6 +70,9 @@ body {
 .about-buttons .dropdown {
   width: 100%;
 }
+.about-buttons .dropdown .dropdown-button {
+  border-radius: 10px 10px 5px 5px;
+}
 
 .box {
   background-color: black;
