@@ -15,7 +15,7 @@ function Dropdown({ title, children }) {
         <h1>{title}</h1>
         <i className={`fa-solid fa-chevron-${isOpen ? 'down' : 'up'}`} id="about-vector"></i>
       </div>
-      {isOpen && <div>{children}</div>}
+      {isOpen && <div className="dropdown-txt">{children}</div>}
     </div>
   );
 }

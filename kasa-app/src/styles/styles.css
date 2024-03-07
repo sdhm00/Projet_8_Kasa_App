@@ -66,12 +66,39 @@ body {
   margin: unset;
 }
 
+.dropdown-txt {
+  background: var(--third-color);
+  border-radius: 10px 10px 5px 5px;
+  color: var(--main-color);
+  margin: -10px 0 0 0;
+  animation: slideOpen 0.8s ease-out;
+  padding: 25px;
+}
+
+@keyframes slideOpen {
+  0% {
+    max-height: 0;
+    overflow: hidden;
+  }
+  100% {
+    max-height: 1000px;
+  }
+}
 /** About page **/
 .about-buttons .dropdown {
   width: 100%;
 }
 .about-buttons .dropdown .dropdown-button {
   border-radius: 10px 10px 5px 5px;
+}
+
+.dropdown-txt .about-txt p {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--main-color);
+  margin: unset;
 }
 
 .box {
@@ -195,23 +222,6 @@ body {
   flex-direction: column;
 }
 
-.about-txt {
-  background: var(--third-color);
-  border-radius: 10px 10px 5px 5px;
-  padding: 30px 20px 20px 20px;
-  margin: -10px 0 0 0;
-  animation: slideOpen 0.8s ease-out;
-}
-
-@keyframes slideOpen {
-  0% {
-    max-height: 0;
-    overflow: hidden;
-  }
-  100% {
-    max-height: 1000px;
-  }
-}
 .about-txt p {
   font-size: 18px;
   font-weight: 400;
@@ -593,12 +603,6 @@ body {
 }
 
 .dropdown-block {
-  background: var(--third-color);
-  border-radius: 10px 10px 5px 5px;
-  color: var(--main-color);
-  padding: 30px 15px 15px 15px;
-  margin: -20px 0 0 0;
-  animation: open 0.8s ease-out;
   min-height: 130px;
 }
 

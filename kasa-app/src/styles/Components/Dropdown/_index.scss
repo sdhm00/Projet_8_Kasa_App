@@ -13,6 +13,25 @@
     }
 }
 
+.dropdown-txt {
+    background: var(--third-color);
+    border-radius: 10px 10px 5px 5px;
+    color: var(--main-color);
+    margin: -10px 0 0 0;
+    animation: slideOpen 0.8s ease-out;
+    padding: 25px;
+}
+
+@keyframes slideOpen {
+    0% {
+        max-height: 0;
+        overflow: hidden;
+    }
+    100% {
+        max-height: 1000px;
+    }
+}
+
 /** About page **/
 
 .about-buttons .dropdown {
@@ -21,4 +40,13 @@
     .dropdown-button {
         border-radius: 10px 10px 5px 5px
     }
+}
+
+.dropdown-txt .about-txt p {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--main-color);
+    margin: unset;
 }
