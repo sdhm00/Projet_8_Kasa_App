@@ -342,7 +342,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 40px;
+  padding: 50px;
 }
 .logement-background img {
   -o-object-fit: cover;
@@ -361,27 +361,24 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 40px;
-  justify-content: space-evenly;
+  gap: 50px;
+  justify-content: flex-start;
 }
 .logement a {
   color: var(--second-color);
   text-decoration: none;
-  display: flex;
-  align-items: flex-end;
+  display: inline-block;
   border-radius: 10px;
   width: 29%;
 }
-
-.cards-background {
+.logement a .cards-background {
   width: 100%;
   height: 100%;
-  display: inline-block;
   border-radius: 10px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
   position: relative;
 }
-.cards-background span {
+
+.card-span {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
   width: 100%;
   height: 100%;
@@ -389,7 +386,7 @@ body {
   display: flex;
   align-items: flex-end;
 }
-.cards-background span p {
+.card-span p {
   padding: 0 10px;
 }
 
