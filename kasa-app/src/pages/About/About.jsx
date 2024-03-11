@@ -1,6 +1,5 @@
 import img2 from "../../assets/img2.png"
 import "../../styles/styles.css"
-import { useState, useEffect } from 'react';
 import About from "./About.json";
 import PropTypes from 'prop-types';
 import Dropdown from "../../components/Dropdown/Dropdown";

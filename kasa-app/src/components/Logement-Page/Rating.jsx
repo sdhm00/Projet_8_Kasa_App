@@ -1,6 +1,5 @@
 import "../../styles/styles.css"
 import PropTypes from 'prop-types'
-import { useState, useEffect } from 'react';
 
 function Rating({ rating }) {
     const activeStars = Math.floor(rating);
