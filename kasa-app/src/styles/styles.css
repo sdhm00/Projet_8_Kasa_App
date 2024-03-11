@@ -385,6 +385,9 @@ body {
   border-radius: 10px;
   display: flex;
   align-items: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .card-span p {
   padding: 0 10px;
