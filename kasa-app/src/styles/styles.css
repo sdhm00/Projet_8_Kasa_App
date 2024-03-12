@@ -342,7 +342,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 50px;
+  padding: 40px;
 }
 .logement-background img {
   -o-object-fit: cover;
@@ -361,7 +361,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 50px;
   justify-content: flex-start;
 }
 .logement a {
@@ -369,7 +369,8 @@ body {
   text-decoration: none;
   display: flex;
   border-radius: 10px;
-  width: 29%;
+  width: 31%;
+  flex-direction: column;
 }
 .logement a .cards-background {
   width: 100%;
@@ -385,7 +386,9 @@ body {
   border-radius: 10px;
   display: flex;
   align-items: flex-end;
-  margin-top: -30px;
+  margin-top: -70px;
+  position: relative;
+  z-index: 2;
 }
 .card-span p {
   padding: 0 10px;
