@@ -367,7 +367,7 @@ body {
 .logement a {
   color: var(--second-color);
   text-decoration: none;
-  display: inline-block;
+  display: flex;
   border-radius: 10px;
   width: 29%;
 }
@@ -385,9 +385,7 @@ body {
   border-radius: 10px;
   display: flex;
   align-items: flex-end;
-  position: absolute;
-  top: 0;
-  left: 0;
+  margin-top: -30px;
 }
 .card-span p {
   padding: 0 10px;
