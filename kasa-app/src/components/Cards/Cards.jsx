@@ -5,10 +5,10 @@ import PropTypes from 'prop-types'
 function Card({ cover, title, id }) {
     return (
         <Link to={`/logement/${id}`} className="cards-background">
-            <img src={cover} alt="Logements cover" />
-            <div className="card-span">
-                <p>{title}</p>
-            </div>
+                <img src={cover} alt="Logements cover" id="cards-img"/>
+                <div className="card-span">
+                    <p>{title}</p>
+                </div>
         </Link>
     )
 }

@@ -20,17 +20,6 @@
 .logement-background {
     border-radius: 25px;
     background: var(--third-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 40px;
-
-    img {
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-        border-radius: 10px;
-    }
 }
 
 .log-block {
@@ -42,8 +31,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 50px;
     justify-content: flex-start;
+    padding: 30px;
 
     a {
         color: var(--second-color);
@@ -52,14 +41,16 @@
         border-radius: 10px;
         width: 31%;
         flex-direction: column;
-
-        .cards-background {
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-            position: relative;
-        }
+        margin: 15px;
+        position: relative;
     }
+}
+
+#cards-img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
 }
 
 .card-span {
@@ -69,8 +60,9 @@
     border-radius: 10px;
     display: flex;
     align-items: flex-end;
-    margin-top: -70px;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 2;
 
     p {
