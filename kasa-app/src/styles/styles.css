@@ -44,6 +44,7 @@ body {
   border-radius: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 /** Version Mobile **/
@@ -198,7 +199,7 @@ body {
     gap: 24px;
   }
   .header img {
-    width: 40%;
+    width: 30%;
   }
   .header a {
     font-size: 12px;
@@ -415,6 +416,7 @@ body {
     flex-direction: column;
     height: unset;
     gap: 22px;
+    padding: unset;
   }
   .logement-background .logement a {
     width: 100%;
