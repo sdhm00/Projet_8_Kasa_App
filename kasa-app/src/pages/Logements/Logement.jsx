@@ -50,8 +50,8 @@ function LogementsPage() {
               <div className="description-buttons">
                 <Dropdown title="Equipements">
                   {logement.equipments.map((equipment, index) =>
-                    <div className="dropdown-block">
-                      <p key={index}>{equipment}</p>
+                    <div className="dropdown-block" key={index}>
+                      <p>{equipment}</p>
                     </div>
                   )}
                 </Dropdown>
