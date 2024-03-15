@@ -13,8 +13,8 @@ function Aboutinfos() {
       </div>
       <div className="info-block">
         <div className="about-infos">
-          {About.map((about) => (
-            <div className="about-buttons">
+          {About.map((about, index) => (
+            <div className="about-buttons" key={index}>
               <Dropdown title={about.title}>
                 <div className="about-txt">
                   <p>{about.text}</p>
